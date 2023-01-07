@@ -15,9 +15,9 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y build-essential gcc-arm-none-eabi
+      - uses: actions/checkout@v2
       - name: build examples for M0602C
         run: |
-          ls
           cd M0602C
           make
       - name: build examples for M1502A

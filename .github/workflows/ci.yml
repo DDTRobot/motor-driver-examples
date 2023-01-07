@@ -9,7 +9,7 @@ on:
       
 jobs:
   build_all_examples:
-    runs-on: dockcross/linux-x86_64-full:latest
+    runs-on: docker.io/dockcross/linux-x86_64-full:latest
     steps:
       - name: add more dependencies
         run: |
